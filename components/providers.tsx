@@ -26,7 +26,7 @@ function ToasterProvider() {
       closeButton
       position="top-right"
       theme={resolvedTheme === "dark" ? "dark" : "light"}
-      className="mt-16"
+      className="!mt-16"
       duration={2000}
     />
   );
