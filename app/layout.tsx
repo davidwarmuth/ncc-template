@@ -27,13 +27,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-svh flex flex-col`}
       >
         <Providers>
           <Header />
-          {children}
+          <main className="grow flex flex-col">{children}</main>
           <Footer />
         </Providers>
       </body>
